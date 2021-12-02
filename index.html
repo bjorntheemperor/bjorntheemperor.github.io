@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>3d</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="fonts/gothambold/font.css">
+    <link rel="stylesheet" href="fonts/GothamBook/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="star-block">
+      <input class="star-speed" type="range" min="0" max="100" step="0.1">
+      <span>Speed:</span><span class="star-speed-value">0</span>
+    </div>
+
+    <div class="hints hidden">
+      <div class="hint-item hidden pex">
+        <div class="hint-item-name">
+          Pex
+        </div>
+        <div class="hint-item-text">
+          This is my first project that I finished in January of 2021.
+        </div>
+      </div>
+      <div class="hint-item hidden montichello">
+        <div class="hint-item-name">
+          Montichello
+        </div>
+        <div class="hint-item-text">
+          Montichello was my second project, but since I didn't finish it,
+          this project remains without adaptive page layout.
+        </div>
+      </div>
+      <div class="hint-item hidden tetris">
+        <div class="hint-item-name">
+          Tetris
+        </div>
+        <div class="hint-item-text">
+          I always wondered how it is to be a game developer. Turns out it's
+          pretty hard. Yet it still remains the most interesting project that
+          I developed. The main focus was on advancing in Javascript.
+          By the way controls are: <b>key arrows</b> (&#8592; &#8595; &#8594;),
+          <b>Z</b> and <b>X</b> to rotate pieces.
+        </div>
+      </div>
+      <div class="hint-item hidden boostfolia">
+        <div class="hint-item-name">
+          Boostfolia
+        </div>
+        <div class="hint-item-text">
+          This is my last non-commercial project.
+        </div>
+      </div>
+    </div>
+
+<!--    <div class="links">-->
+<!--      <div class="links-text">Links to my projects</div>-->
+<!--      <a href="https://bjorntheemperor.github.io/pex" target="_blank" class="link">Pex</a>-->
+<!--      <a href="https://bjorntheemperor.github.io/montichello" target="_blank" class="link">Montichello</a>-->
+<!--      <a href="https://bjorntheemperor.github.io/tetris" target="_blank" class="link">Tetris</a>-->
+<!--      <a href="https://bjorntheemperor.github.io/boostfolia" target="_blank" class="link">Boostfolia</a>-->
+<!--    </div>-->
+
+    <div class="intro">
+      <div class="intro__container">
+        <span class="intro__text hidden" id="first">Hello.</span>
+        <br>
+        <span class="intro__text hidden" id="second">My name is Daniel</span>
+        <br>
+        <span class="intro__text hidden" id="third">and this is my portfolio</span>
+        <button class="intro__start round invisible"><span class="intro__start-text hidden">start</span></button>
+        <div class="intro__layer"></div>
+      </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="assets/js/portfolio.js" type="text/javascript"></script>
+
+  </body>
+</html>
