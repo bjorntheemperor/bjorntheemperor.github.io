@@ -1,8 +1,6 @@
 import * as THREE from './three.module.js';
 import {OrbitControls} from './OrbitControls.js'
-import { CSS2DRenderer, CSS2DObject } from './CSS2DRenderer.js'
 import { CSS3DRenderer, CSS3DObject} from './CSS3DRenderer.js'
-import {Scene} from "./three.module.js";
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
