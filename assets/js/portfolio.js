@@ -405,10 +405,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     render();
 
-// const sides = document.querySelectorAll('.side')
-// for (let key of sides){
-//     key.classList.add('falling')
-// }
+    const sides = document.querySelectorAll('.side')
+    for (let key of sides){
+        key.classList.add('falling')
+    }
 
     let fallingCube = () => {
         for (let key of sides){
