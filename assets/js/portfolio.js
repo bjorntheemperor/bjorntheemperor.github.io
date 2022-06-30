@@ -400,7 +400,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         //     console.log(intersects[i])
         // }
         // console.log(event.target)
-        console.log(event.target)
     }
 
     render();
