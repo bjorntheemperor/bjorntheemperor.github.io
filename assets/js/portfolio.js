@@ -43,6 +43,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
 
     let disappear = () => {
+
+        setValue('intro', false)
+
         intro_btn.style.backgroundColor = 'white'
         document.querySelector('.intro__layer').classList.add('fill')
         setTimeout(()=>{
@@ -53,10 +56,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }, 4000)
         setTimeout(fallingCube,2000)
 
-
     }
 
-    introAnimation()
     intro_btn.addEventListener('click', disappear)
 
 
@@ -141,7 +142,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 <iframe class="iframe montichello work-example hidden" width="1000" height="1000" src="https://bjorntheemperor.github.io/montichello/"></iframe>
                 <div class="about hidden">
                     <div class="about-inner">
-                        <div class="about-name">Daniil Kononenko</div>                   
+                        <div class="about-name">Daniel Kononenko</div>                   
                         <img class="about-img" src="assets/images/me.jpg" alt="ayy that's me">
                     </div>
                 </div>
@@ -253,10 +254,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
                         <div class="about-title">Contact</div>
                         <div class="about-info">
                             <div class="about-info-item">
-                                <b>Name:</b> Daniil Kononenko
+                                <b>Name:</b> Daniel Kononenko
                             </div>
                             <div class="about-info-item">
-                                <b>Address:</b> Chernihiv, Ukraine
+                                <b>Address:</b> Warsaw 01-023, Poland
                             </div>
                             <div class="about-info-item">
                                 <b>Phone:</b> +380976061912
@@ -315,7 +316,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                         </ul>
                     </div>
                 </div>
-                
+                <iframe class="iframe medissa work-example hidden" width="1000" height="1000" src="https://bjorntheemperor.github.io/medissa/"></iframe>
            </div>
         `)
 
@@ -414,6 +415,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
             key.classList.remove('falling')
         }
     }
+    if (JSON.parse(getValue('intro'))) {
+        introAnimation()
+    } else {
+        $('.intro').hide()
+        fallingCube()
+    }
 
 //
 // for (let key of iframez){
@@ -459,6 +466,16 @@ document.addEventListener("DOMContentLoaded", ()=>{
         document.querySelector('.hint-item.boostfolia').classList.add('hidden')
         document.querySelector('.hints').classList.add('hidden')
     })
+    document.querySelector('.iframe.medissa').addEventListener('mouseenter', () => {
+        document.querySelector('.hint-item.medissa').classList.remove('hidden')
+        document.querySelector('.hints').classList.remove('hidden')
+    })
+    document.querySelector('.iframe.medissa').addEventListener('mouseleave', () => {
+        document.querySelector('.hint-item.medissa').classList.add('hidden')
+        document.querySelector('.hints').classList.add('hidden')
+    })
+
+
 
     // let circleName = document.querySelector('.about-text')
     //

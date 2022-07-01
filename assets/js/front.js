@@ -39,8 +39,6 @@ let hideSkills = () => {
 }
 
 
-console.log(workExamples)
-
 about.addEventListener('click', ()=>{
     hideWorkExamples()
     hideSkills()

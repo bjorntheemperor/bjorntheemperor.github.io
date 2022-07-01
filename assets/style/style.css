@@ -53,7 +53,7 @@ iframe{
 
 .intro__start{
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   right: 50px;
   width: 350px;
   height: 160px;
@@ -160,6 +160,10 @@ iframe{
 .hint-item.boostfolia{
   background-color: rgba(255, 92, 44, 0.7);
 }
+.hint-item.medissa{
+  background-color: rgba(0, 165, 127, 0.7);
+}
+
 
 
 .hint-item.hidden{
