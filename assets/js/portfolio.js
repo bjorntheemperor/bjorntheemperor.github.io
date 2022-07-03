@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 <iframe class="iframe montichello work-example hidden" width="1000" height="1000" src="https://bjorntheemperor.github.io/montichello/"></iframe>
                 <div class="about hidden">
                     <div class="about-inner">
-                        <div class="about-name">Daniel Kononenko</div>                   
+                        <div class="about-name">Daniil Kononenko</div>                   
                         <img class="about-img" src="assets/images/me.jpg" alt="ayy that's me">
                     </div>
                 </div>
@@ -254,13 +254,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
                         <div class="about-title">Contact</div>
                         <div class="about-info">
                             <div class="about-info-item">
-                                <b>Name:</b> Daniel Kononenko
+                                <b>Name:</b> Daniil Kononenko
                             </div>
                             <div class="about-info-item">
                                 <b>Address:</b> Warsaw 01-023, Poland
                             </div>
                             <div class="about-info-item">
-                                <b>Phone:</b> +380976061912
+                                <b>Phone:</b> +48 510 740 817
                             </div>
                             <div class="about-info-item">
                                 <b>Email:</b> erasusdk@gmail.com
