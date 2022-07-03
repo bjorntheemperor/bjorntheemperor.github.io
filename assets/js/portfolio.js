@@ -175,9 +175,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 <div class="about hidden">
                     <div class="about-inner">
                         <div class="about-title">Work History</div>
-                        <div class="about-info">
-                            <b>from 08/2021 to current time as</b>
+                        <div class="about-info work-history">
+                            <b>from 08/2021 to 01/2022 time as</b>
+                            Junior Frontend Developer and Page Layout Specialist 
+                            at Freelance
+                            <hr>
+                            <b>from 02/2022 to current time as</b>
                             Junior Frontend Developer and Page Layout Specialist
+                            at Sbitsoft Web Development
                         </div>
                     </div>                    
                 </div>
