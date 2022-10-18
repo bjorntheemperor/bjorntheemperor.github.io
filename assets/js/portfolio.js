@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                             <li>ES5, ES6</li>
                             <li>jQuery</li>
                             <li>Three.js</li>
+                            <li>React (Beginner level)</li>
                         </ul>
                     </div>                
                 </div>
@@ -358,18 +359,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let movingStars = (starSpeed) => {
 
         let parsedStarSpeed = parseFloat(starSpeed)
+        const limitedSpaceRange = 5000
         for (let i = 0; i < scene.children.length; i++){
             if (scene.children[i].name === 'Star'){
                 scene.children[i].position.z += parsedStarSpeed
                 scene.children[i].position.x += 0
                 scene.children[i].position.y += 0
                 //console.log(scene.children[777].position.z)
-                if (scene.children[i].position.x > 5000) scene.children[i].position.x = -5000
-                if (scene.children[i].position.x < -5000) scene.children[i].position.x = 5000
-                if (scene.children[i].position.y > 5000) scene.children[i].position.y = -5000
-                if (scene.children[i].position.y < -5000) scene.children[i].position.y = 5000
-                if (scene.children[i].position.z > 5000) scene.children[i].position.z = -5000
-                if (scene.children[i].position.z < -5000) scene.children[i].position.z = 5000
+                if (scene.children[i].position.x > limitedSpaceRange) scene.children[i].position.x = -limitedSpaceRange
+                if (scene.children[i].position.x < -limitedSpaceRange) scene.children[i].position.x = limitedSpaceRange
+                if (scene.children[i].position.y > limitedSpaceRange) scene.children[i].position.y = -limitedSpaceRange
+                if (scene.children[i].position.y < -limitedSpaceRange) scene.children[i].position.y = limitedSpaceRange
+                if (scene.children[i].position.z > limitedSpaceRange) scene.children[i].position.z = -limitedSpaceRange
+                if (scene.children[i].position.z < -limitedSpaceRange) scene.children[i].position.z = limitedSpaceRange
             }
 
         }
@@ -437,50 +439,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
 //     })
 // }
 
+    const projectNames = ['montichello', 'pex', 'tetris', 'boostfolia', 'medissa']
 
-
-    document.querySelector('.iframe.montichello').addEventListener('mouseenter', () => {
-        document.querySelector('.hint-item.montichello').classList.remove('hidden')
-        document.querySelector('.hints').classList.remove('hidden')
+    projectNames.forEach(name => {
+        document.querySelector(`.iframe.${name}`).addEventListener('mouseenter', () => {
+            document.querySelector(`.hint-item.${name}`).classList.remove('hidden')
+            document.querySelector('.hints').classList.remove('hidden')
+        })
+        document.querySelector(`.iframe.${name}`).addEventListener('mouseleave', () => {
+            document.querySelector(`.hint-item.${name}`).classList.add('hidden')
+            document.querySelector('.hints').classList.add('hidden')
+        })
     })
-    document.querySelector('.iframe.montichello').addEventListener('mouseleave', () => {
-        document.querySelector('.hint-item.montichello').classList.add('hidden')
-        document.querySelector('.hints').classList.add('hidden')
-    })
-    document.querySelector('.iframe.pex').addEventListener('mouseenter', () => {
-        document.querySelector('.hint-item.pex').classList.remove('hidden')
-        document.querySelector('.hints').classList.remove('hidden')
-    })
-    document.querySelector('.iframe.pex').addEventListener('mouseleave', () => {
-        document.querySelector('.hint-item.pex').classList.add('hidden')
-        document.querySelector('.hints').classList.add('hidden')
-    })
-    document.querySelector('.iframe.tetris').addEventListener('mouseenter', () => {
-        document.querySelector('.hint-item.tetris').classList.remove('hidden')
-        document.querySelector('.hints').classList.remove('hidden')
-    })
-    document.querySelector('.iframe.tetris').addEventListener('mouseleave', () => {
-        document.querySelector('.hint-item.tetris').classList.add('hidden')
-        document.querySelector('.hints').classList.add('hidden')
-    })
-    document.querySelector('.iframe.boostfolia').addEventListener('mouseenter', () => {
-        document.querySelector('.hint-item.boostfolia').classList.remove('hidden')
-        document.querySelector('.hints').classList.remove('hidden')
-    })
-    document.querySelector('.iframe.boostfolia').addEventListener('mouseleave', () => {
-        document.querySelector('.hint-item.boostfolia').classList.add('hidden')
-        document.querySelector('.hints').classList.add('hidden')
-    })
-    document.querySelector('.iframe.medissa').addEventListener('mouseenter', () => {
-        document.querySelector('.hint-item.medissa').classList.remove('hidden')
-        document.querySelector('.hints').classList.remove('hidden')
-    })
-    document.querySelector('.iframe.medissa').addEventListener('mouseleave', () => {
-        document.querySelector('.hint-item.medissa').classList.add('hidden')
-        document.querySelector('.hints').classList.add('hidden')
-    })
-
-
 
     // let circleName = document.querySelector('.about-text')
     //
